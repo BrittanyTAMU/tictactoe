@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<!-- create a div Elements to contain the game itself -->
+    <div id="gameBoard">
+        <!-- create a title -->
+        <h1>Tic Tac Toe</h1>
+        <!-- create a div section for the grid -->
+        <div id="cellContainer">
+            <!-- create an attribute named cell index and a class, then copy the cells 9 times for the 9 cells in the tic tac toe container  -->
+            <div cellIndex = "0" class="cell"></div>
+            <div cellIndex = "1" class="cell"></div>
+            <div cellIndex = "2" class="cell"></div>
+            <div cellIndex = "3" class="cell"></div>
+            <div cellIndex = "4" class="cell"></div>
+            <div cellIndex = "5" class="cell"></div>
+            <div cellIndex = "6" class="cell"></div>
+            <div cellIndex = "7" class="cell"></div>
+            <div cellIndex = "8" class="cell"></div>
+        </div>
+        <!-- create an area for who won and whos turn it is -->
+        <h2 id="statusText"></h2>
+        <!-- create a btn for restart -->
+        <button id="restart">Restart</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+/* format the cells to show them at an appropiate width and height, border, font size, and a decorative cursive for fun */
+/* it should show as a column */
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+
+}
+
+/* show the containers as a grid instead of as a column, with a certain width and margin it to the center of the page */
+
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+}
+
+/* align the X's and O's in the board as a certain font and make sure its centered in the middle of the cells */
+#gameBoard{
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+}
